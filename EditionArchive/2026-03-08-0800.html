@@ -1,66 +1,88 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@700;900&family=EB+Garamond:wght@400;700&display=swap');
+<div class="edition-content">
+  <style>
+    .dispatch-section { margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px; }
+    .dispatch-header { text-align: center; border-bottom: 3px double #333; margin-bottom: 20px; }
+    .section-title { font-family: 'Playfair Display', serif; text-transform: uppercase; color: #1a1a1a; border-left: 5px solid #333; padding-left: 10px; margin-top: 25px; }
+    .top-story-box { background: #f9f9f9; padding: 20px; border: 1px solid #333; margin-bottom: 25px; }
+    .score-table { width: 100%; border-collapse: collapse; font-family: monospace; }
+    .score-table td { padding: 5px; border-bottom: 1px solid #eee; }
+    .source-list { font-size: 0.85rem; color: #666; font-style: italic; }
+  </style>
 
-  .edition-wrapper {
-    background-color: #f2f0eb;
-    color: #1a1a1a;
-    font-family: 'EB Garamond', serif;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-    border: 1px solid #d3c9b5;
-    line-height: 1.6;
-  }
-
-  .edition-header {
-    text-align: center;
-    border-top: 2px solid #1a1a1a;
-    border-bottom: 2px solid #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-  }
-
-  .edition-header h1 {
-    font-family: 'UnifrakturMaguntia', serif;
-    font-size: 2.5rem;
-    margin: 0;
-  }
-
-  .headline-group { text-align: center; margin-bottom: 30px; border-bottom: 1px solid #1a1a1a; padding-bottom: 15px; }
-  .headline-group h2 { font-family: 'Playfair Display', serif; text-transform: uppercase; margin: 0; font-size: 1.8rem; }
-
-  .news-article { margin-bottom: 25px; }
-  .dateline { font-weight: bold; text-transform: uppercase; margin-right: 8px; }
-</style>
-
-<div class="edition-wrapper">
-  <div class="edition-header">
-    <div style="font-size: 0.7rem; text-align: left;">VOL. I<br>NO. 15</div>
-    <h1>Daily Dispatch</h1>
-    <div style="font-size: 0.7rem; text-align: right;">08:00 AM<br>MAR 8, 2026</div>
+  <div class="dispatch-header">
+    <h1 style="font-family: 'UnifrakturMaguntia', serif; font-size: 3rem; margin: 0;">The Daily Dispatch</h1>
+    <p>Sunday, March 8, 2026 | Morning Edition: 08:00 AM</p>
   </div>
 
-  <div class="headline-group">
-    <h2>Hormuz Logistics: The Global Strain</h2>
-    <p style="font-style: italic; margin: 5px 0 0 0;">Supply Chains Bracing for Prolonged Disruption</p>
+  <div class="top-story-box">
+    <h2 style="margin-top:0;">TOP STORY: Hormuz Conflict Intensifies</h2>
+    <p>Global markets are reeling as Iran’s Revolutionary Guards (IRGC) signal readiness for a "six-month intense war" following U.S. and Israeli strikes on strategic oil and military assets. The Strait of Hormuz is de facto closed to commercial traffic, with approximately 20,000 seafarers currently stranded in the Persian Gulf. Crude prices are hovering near $100 per barrel as the Trump administration considers Navy escorts for fuel tankers.</p>
   </div>
 
-  <div class="news-article">
-    <p><span class="dateline">MANAMA, MAR 8—</span> Logistics experts warn of a "cascading effect" on global trade as the Strait of Hormuz remains contested. Beyond fuel costs, the human toll is seen in the stranded merchant crews currently caught in the regional crossfire.</p>
+  <h3 class="section-title">World & National News</h3>
+  <div class="dispatch-section">
+    <ul>
+      <li><strong>Lebanon Crisis:</strong> Israeli strikes in Beirut have killed at least 12 people in the last 24 hours.</li>
+      <li><strong>Michigan Tornadoes:</strong> Search and rescue efforts continue in Branch and Cass counties; the death toll has reached 8 following an EF-3 strike.</li>
+      <li><strong>Security Alert:</strong> Six individuals are in custody in NYC after explosive devices were found near Gracie Mansion.</li>
+      <li><strong>International Women's Day:</strong> Millions gather globally to advocate for parity amidst rising geopolitical tension.</li>
+    </ul>
   </div>
 
-  <div class="news-article">
-    <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 5px;">Creative AI: The Godot Integration</h3>
-    <p><span class="dateline">OVERLAND PARK—</span> Local developers are reporting significant breakthroughs in using LLMs to manage complex logic nodes within the Godot 4 engine. This progress is expected to streamline production for independent graphic novel projects.</p>
+  <h3 class="section-title">Finance, Markets & Industry</h3>
+  <div class="dispatch-section">
+    <p><strong>The High-Level Take:</strong> While energy sectors are volatile, domestic agriculture remains a bright spot with early spring planting reports suggesting record yields in the Heartland. Employment in the Midwest tech-manufacturing sector grew 2.1% this month.</p>
+    <ul>
+      <li><strong>Crude Oil:</strong> $98.42 (▲ 8.2%)</li>
+      <li><strong>NASCAR Valuation:</strong> 23XI Racing sees record sponsorship surges following Tyler Reddick’s win at COTA.</li>
+    </ul>
   </div>
 
-  <div class="news-article">
-    <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 5px;">Community Resilience: Local Efforts</h3>
-    <p><span class="dateline">KANSAS CITY—</span> Volunteer networks have expanded food distribution programs this morning to offset rising grocery costs. Organizers emphasize that community-led support remains the most effective tool against economic instability.</p>
+  <h3 class="section-title">Sports Scoreboard</h3>
+  <div class="dispatch-section">
+    <h4>NBA Finals (Mar 7)</h4>
+    <table class="score-table">
+      <tr><td>LA Clippers</td><td>123</td><td>Memphis</td><td>120</td></tr>
+      <tr><td>OKC Thunder</td><td>104</td><td>Golden State</td><td>97</td></tr>
+      <tr><td>Milwaukee</td><td>113</td><td>Utah</td><td>99</td></tr>
+    </table>
+    
+    <h4>NHL Results (Mar 7)</h4>
+    <table class="score-table">
+      <tr><td>Tampa Bay</td><td>5</td><td>Toronto</td><td>2</td></tr>
+      <tr><td>Montreal</td><td>4</td><td>LA Kings</td><td>3</td></tr>
+      <tr><td>Islanders</td><td>2</td><td>San Jose</td><td>1 (OT)</td></tr>
+    </table>
+
+    <h4>Women's Sports & Racing</h4>
+    <ul>
+      <li><strong>NCAAW:</strong> NDSU defeats St. Thomas 63-51 to advance in the Summit League.</li>
+      <li><strong>NASCAR:</strong> Tyler Reddick takes the DuraMax Grand Prix at COTA.</li>
+    </ul>
   </div>
-  
-  <p style="text-align: center; border-top: 1px solid #1a1a1a; padding-top: 10px; font-size: 0.7rem; font-weight: bold;">[LOG: 2026-03-08 08:00] MORNING TRANSMISSION COMPLETE</p>
+
+  <h3 class="section-title">Science, Health & Mad Science</h3>
+  <div class="dispatch-section">
+    <ul>
+      <li><strong>Mad Science:</strong> 3D mapping reveals DNA structures itself into a "scaffold" before life officially begins in embryos.</li>
+      <li><strong>Tech Discovery:</strong> NASA's Perseverance rover successfully completed its first 100% AI-planned drive on Mars.</li>
+      <li><strong>Health:</strong> New research identifies a "exhaustion switch" in T-cells that could revolutionize cancer immunotherapy.</li>
+    </ul>
+  </div>
+
+  <h3 class="section-title">Strangeness, Oddities & On This Day</h3>
+  <div class="dispatch-section">
+    <p><strong>On This Day (1855):</strong> The first train successfully crossed the Niagara Falls Suspension Bridge, proving engineers right and skeptics wrong.</p>
+    <p><strong>Strange Oldies:</strong> In 1894, New York enacted the first dog licensing law in America, officially recognizing pets as registered residents.</p>
+  </div>
+
+  <h3 class="section-title">Feel Good & Animal Video</h3>
+  <div class="dispatch-section">
+    <p><strong>Community Resilience:</strong> Volunteers in Three Rivers, Michigan, have organized a massive donation drive to support families displaced by Friday's storms.</p>
+    <p><strong>Animal Clip:</strong> <a href="https://www.youtube.com/watch?v=yM4hMmHWo2U">Heartwarming Pets and Humans 2026 Compilation</a></p>
+  </div>
+
+  <div class="source-list">
+    <p><strong>Sources:</strong> The Hindu, CBS News, Fox Weather, NHL.com, Basketball-Reference, NASA JPL, ScienceDaily.</p>
+  </div>
 </div>
