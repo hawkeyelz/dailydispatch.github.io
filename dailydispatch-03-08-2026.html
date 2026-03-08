@@ -1,0 +1,67 @@
+<style>
+  .hnn-container { font-family: 'Times New Roman', serif; color: #111; max-width: 900px; margin: auto; padding: 20px; background: #fdfdfd; }
+  .hnn-masthead { text-align: center; border-bottom: 4px double #222; margin-bottom: 20px; }
+  .hnn-masthead h1 { font-size: 3.5rem; margin: 0; font-variant: small-caps; }
+  
+  /* Sticky Navigation */
+  .hnn-nav { position: sticky; top: 0; background: #eee; border: 1px solid #333; display: flex; justify-content: space-around; padding: 8px; z-index: 100; font-weight: bold; font-size: 0.9rem; }
+  .hnn-nav a { color: #222; text-decoration: none; }
+
+  /* Newspaper Grid */
+  .hnn-row { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }
+  .hnn-main { flex: 3 1 500px; }
+  .hnn-sidebar { flex: 1 1 250px; border-left: 1px solid #ccc; padding-left: 20px; font-size: 0.95rem; }
+
+  .headline { font-size: 1.8rem; line-height: 1.1; margin-bottom: 5px; border-bottom: 1px solid #eee; }
+  .subhead { font-style: italic; color: #555; margin-bottom: 15px; display: block; }
+  .section-tag { background: #333; color: #fff; padding: 2px 6px; font-size: 0.7rem; text-transform: uppercase; vertical-align: middle; }
+
+  @media (max-width: 700px) {
+    .hnn-sidebar { border-left: none; border-top: 1px solid #ccc; padding-left: 0; padding-top: 20px; }
+    .hnn-masthead h1 { font-size: 2.2rem; }
+  }
+</style>
+
+<div class="hnn-container">
+  <div class="hnn-masthead">
+    <h1>HNN BROADCAST</h1>
+    <p>VOL. IV ... NO. 67 | OVERLAND PARK, KANSAS | SUNDAY, MARCH 8, 2026</p>
+  </div>
+
+  <nav class="hnn-nav">
+    <a href="#gta">GTA UPDATES</a>
+    <a href="#tech">TECH & AI</a>
+    <a href="#local">LOCAL NEWS</a>
+  </nav>
+
+  <div class="hnn-row">
+    <div class="hnn-main">
+      <div id="gta">
+        <span class="section-tag">GTA Online</span>
+        <h2 class="headline">Salvage Yard Grinds Take Priority This Week</h2>
+        <span class="subhead">Rare plates and double payouts on daily income.</span>
+        <p>Rockstar has set the focus on the Salvage Yard for the week ending March 12. <b>Double GTA$ and RP</b> are active on Salvage Yard Daily Income and Tow Truck Service salvage values. Notably, players can claim the <b>Pfister Comet S2 Cabrio</b> (with rare LS Pounders plate) and the <b>Lampadati Tigon</b> (with LS Panic plate) through robberies this week. The Railgun is also back in the Gun Van at 40% off.</p>
+      </div>
+
+      <hr>
+
+      <div id="local">
+        <span class="section-tag">Local Report</span>
+        <h2 class="headline">Tornado Confirmed in Northern Johnson County</h2>
+        <span class="subhead">NWS confirms EF-0 touched down during Friday storms.</span>
+        <p>The National Weather Service confirmed an EF-0 tornado hit northern Johnson County during the line of storms late Friday night. Damage was reported as minor, primarily affecting trees and power lines. Meanwhile, local lodging for the 2026 World Cup continues to tighten; officials estimate 650,000 visitors will squeeze into a region with only 55,000 hotel rooms, pushing many toward short-term rentals in Overland Park.</p>
+      </div>
+    </div>
+
+    <div class="hnn-sidebar">
+      <div id="tech">
+        <span class="section-tag">Creative Engine</span>
+        <h3>Lenovo Debuts AI "Flow" at MWC</h3>
+        <p>New Yoga and Legion Go concepts focus on "Zero Touch" gestures and 2D-to-3D conversion software. The goal is keeping creators in a "flow state" by automating rendering tasks in the background.</p>
+        <hr>
+        <h3>AI Security Warning</h3>
+        <p>A high-rated vulnerability (CVE-2026-0628) was flagged in the Chrome Gemini panel, allowing malicious extensions to hijack local sessions. Keep your browser updated to the latest build.</p>
+      </div>
+    </div>
+  </div>
+</div>
