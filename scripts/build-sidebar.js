@@ -1,24 +1,20 @@
 const fs = require('fs');
 const path = require('path');
 
-// Folders
-const archiveDir = path.join(__dirname, '../EditionArchive');
-const navFile = path.join(__dirname, '../partials/sidebar-nav.html');
+// Target the correct folder and manifest locations
+const editionsDir = path.join(__dirname, '../EditionArchive');
+const manifestPath = path.join(__dirname, '../archive-manifest.json');
 
-// Create folders if they don't exist
-if (!fs.existsSync(archiveDir)) fs.mkdirSync(archiveDir);
-if (!fs.existsSync(path.dirname(navFile))) fs.mkdirSync(path.dirname(navFile), { recursive: true });
+try {
+    // Read files, filter for HTML, and remove extensions
+    const files = fs.readdirSync(editionsDir)
+        .filter(file => file.endsWith('.html'))
+        .map(file => file.replace('.html', ''))
+        // Sorts descending so 2026-03-08-2100 comes before 2026-03-08-0800
+        .sort((a, b) => b.localeCompare(a));
 
-// Read archive files
-const files = fs.readdirSync(archiveDir)
-    .filter(file => file.endsWith('.html'))
-    .sort().reverse();
-
-// Build navigation links
-const navLinks = files.map(file => {
-    const date = file.replace('.html', '');
-    return `<a href="EditionArchive/${file}" class="nav-item nav-world">${date} Dispatch</a>`;
-}).join('\n');
-
-fs.writeFileSync(navFile, navLinks);
-console.log(`Success! Updated sidebar with ${files.length} editions.`);
+    fs.writeFileSync(manifestPath, JSON.stringify(files, null, 2));
+    console.log(`Success! Updated sidebar with ${files.length} editions.`);
+} catch (err) {
+    console.error("Error building manifest:", err);
+}
