@@ -1,4 +1,12 @@
-"scripts": {
-  "build": "node build-archive.js",
-  "deploy": "npm run build && git add . && git commit -m 'New Edition' && git push"
+{
+  "name": "dailydispatch",
+  "version": "1.0.0",
+  "description": "HNN Daily Dispatch Newsroom",
+  "main": "index.html",
+  "scripts": {
+    "build": "node scripts/build-sidebar.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
