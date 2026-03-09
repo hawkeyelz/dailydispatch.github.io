@@ -1,6 +1,18 @@
 [
-  "2026-03-08-2000",
-  "2026-03-08-1800",
-  "2026-03-08-0800",
-  "2026-03-08"
+  {
+    "path": "./EditionArchive/2026-03-08-2000.html",
+    "displayDate": "2026-03-08-2000"
+  },
+  {
+    "path": "./EditionArchive/2026-03-08-1800.html",
+    "displayDate": "2026-03-08-1800"
+  },
+  {
+    "path": "./EditionArchive/2026-03-08-0800.html",
+    "displayDate": "2026-03-08-0800"
+  },
+  {
+    "path": "./EditionArchive/2026-03-08.html",
+    "displayDate": "2026-03-08"
+  }
 ]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Dispatch | System Diagnostic</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: #00ff00; padding: 20px; line-height: 1.6; }
+        .success { color: #00ff00; font-weight: bold; }
+        .fail { color: #ff4444; font-weight: bold; text-decoration: underline; }
+        .warning { color: #ffaa00; }
+        h1 { border-bottom: 2px solid #00ff00; padding-bottom: 10px; }
+        .log-entry { margin-bottom: 5px; border-left: 3px solid #333; padding-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>[ HNN SYSTEM DIAGNOSTIC v2.0 ]</h1>
+    <div id="status-board">Initializing scan...</div>
+
+    <script>
+        const board = document.getElementById('status-board');
+        
+        function log(msg, type = '') {
+            const div = document.createElement('div');
+            div.className = `log-entry ${type}`;
+            div.innerHTML = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            board.appendChild(div);
+        }
+
+        async function runDiagnostic() {
+            board.innerHTML = '';
+            log("Starting Path Integrity Check...", "warning");
+
+            // 1. Check Manifest
+            const manifestPath = './archive-manifest.json';
+            log(`Attempting to locate manifest at: <b>${manifestPath}</b>`);
+            
+            try {
+                const res = await fetch(manifestPath);
+                if (res.ok) {
+                    const data = await res.json();
+                    log(`SUCCESS: Manifest found. Articles detected: ${data.length}`, "success");
+                    
+                    // 2. Check first article in manifest
+                    if (data.length > 0) {
+                        const firstArt = data[0].path;
+                        log(`Testing first article path: <b>${firstArt}</b>`);
+                        const artRes = await fetch(firstArt);
+                        if (artRes.ok) {
+                            log(`SUCCESS: Article reachable!`, "success");
+                        } else {
+                            log(`FAILED: Article not found at path. Status: ${artRes.status}`, "fail");
+                            log(`HINT: Check if your folder is named 'Articles' (Capital A) but the manifest says 'articles' (lowercase).`, "warning");
+                        }
+                    }
+                } else {
+                    log(`FAILED: Manifest not found. Status: ${res.status}`, "fail");
+                    log(`HINT: Make sure 'archive-manifest.json' is in the same folder as this debug file.`, "warning");
+                }
+            } catch (e) {
+                log(`CRITICAL ERROR: ${e.message}`, "fail");
+            }
+        }
+
+        runDiagnostic();
+    </script>
+</body>
+</html>

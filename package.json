@@ -4,7 +4,7 @@
   "description": "HNN Daily Dispatch Newsroom",
   "main": "index.html",
   "scripts": {
-    "build": "node scripts/build-sidebar.js"
+    "build": "node scripts/build-archive.js"
   },
   "keywords": [],
   "author": "",
