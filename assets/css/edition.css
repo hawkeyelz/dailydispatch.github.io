@@ -1,0 +1,98 @@
+:root {
+    --hnn-red: #d9534f;
+    --hnn-blue: #337ab7;
+    --hnn-cyan: #5bc0de;
+    --hnn-green: #4caf50;
+    --hnn-orange: #f0ad4e;
+    --hnn-purple: #9c27b0;
+    --hnn-dark: #1a1a1a;
+    --hnn-white: #ffffff;
+    --hnn-grey: #eee;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 40px 10px;
+}
+
+.dispatch-edition {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    color: var(--hnn-dark);
+    max-width: 900px;
+    margin: auto;
+    border: 2px solid #333;
+    padding: 25px;
+    background-color: var(--hnn-white);
+}
+
+header {
+    text-align: center;
+    border-bottom: 4px solid var(--hnn-red);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: var(--hnn-red);
+    text-transform: uppercase;
+}
+
+.edition-date {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+h2.category-header {
+    background: #333;
+    color: var(--hnn-white);
+    padding: 8px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 40px 0 20px 0;
+}
+
+h2.category-header:first-of-type {
+    margin-top: 0;
+}
+
+article {
+    border: 1px solid var(--hnn-grey);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid transparent;
+}
+
+.cat-world { border-left-color: var(--hnn-red); }
+.cat-nat { border-left-color: var(--hnn-cyan); }
+.cat-fin { border-left-color: var(--hnn-green); }
+.cat-tech { border-left-color: var(--hnn-orange); }
+.cat-health { border-left-color: var(--hnn-red); }
+.cat-sports { border-left-color: var(--hnn-blue); }
+.cat-btl { border-left-color: var(--hnn-purple); }
+
+.source-footer {
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.source-footer a {
+    color: var(--hnn-blue);
+    text-decoration: none;
+}
+
+footer.main-footer {
+    margin-top: 50px;
+    border-top: 2px solid #333;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
