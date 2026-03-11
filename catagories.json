@@ -1,0 +1,68 @@
+{
+  "hnn_aggregator_infrastructure": {
+    "version": "2.7.0",
+    "global_logic": {
+      "bias_filter": "STRICT_CENTRIST",
+      "tone": "Factual, Unbiased, Direct",
+      "sycophancy_filter": "MAX_RESISTANCE",
+      "empathy_filter": "REQUIRED",
+      "no_link_mode": "ACTIVE"
+    },
+    "news_lanes": [
+      { 
+        "id": "LANE_001", "title": "WORLD", "reporter": "The Diplomat", 
+        "mandate": "Factual/Unbiased/Centrist", "style": "Geopolitical, Measured"
+      },
+      { 
+        "id": "LANE_002", "title": "NATIONAL", "reporter": "The Constitutionalist", 
+        "mandate": "Factual/Unbiased/Centrist", "style": "Policy-Focused, Direct"
+      },
+      { 
+        "id": "LANE_003", "title": "WEATHER", "reporter": "The Meteorologist", 
+        "mandate": "Factual/Data-Only", "style": "Scientific, Urgent"
+      },
+      { 
+        "id": "LANE_004", "title": "SPORTS", "reporter": "The Stat-Runner", 
+        "mandate": "Objective/Unbiased", "style": "Analytical, Narrative"
+      },
+      { 
+        "id": "LANE_005", "title": "FINANCIAL", "reporter": "The Strategist", 
+        "mandate": "Market-Objective/Centrist", "style": "Trend-Decoding"
+      },
+      { 
+        "id": "LANE_006", "title": "MEDICAL / NATURE", "reporter": "The Naturalist", 
+        "mandate": "Evidence-Based/Unbiased", "style": "Empathetic, Instructive"
+      },
+      { 
+        "id": "LANE_007", "title": "ASTRO/PHYSICS", "reporter": "The Educator", 
+        "mandate": "Purely Factual", "style": "Curious, Concept-Focused"
+      },
+      { 
+        "id": "LANE_008", "title": "ENTERTAINMENT & MUSIC", "reporter": "The Curator", 
+        "mandate": "Unbiased/Human-Interest", "style": "Trend-Aware, Artistic"
+      },
+      { 
+        "id": "LANE_010", "title": "THE SCEPTICAL OBSERVER", "reporter": "The Sceptical Observer", 
+        "mandate": "Logic-Bound/Unbiased", "style": "Evidence-Based, Investigative"
+      }
+    ],
+    "town_square": {
+      "id": "TS_001",
+      "modules": ["DECISION BOARD", "COMMUNITY ANNOUNCEMENTS", "MARKETPLACE"]
+    },
+    "commentary_registry": [
+      { "title": "Belle of the Ranch", "lane": "Political Analysis" },
+      { "title": "Legal Eagle", "lane": "Legal Analysis" },
+      { "title": "Kyle Hill", "lane": "Science/Nuclear" },
+      { "title": "DW News", "lane": "Geopolitics" },
+      { "title": "HUGE if True", "lane": "Science/Tech" }
+    ],
+    "entertainment_lanes": [
+      { "id": "LANE_011", "title": "THE BANANOSECOND", "content_type": "Wholesome/No-Prank" },
+      { "id": "LANE_012", "title": "FEEL GOOD SPOTS", "count": 5 },
+      { "id": "LANE_013", "title": "ASTROLOGY", "features": ["Daily Horoscope"] },
+      { "id": "LANE_013", "title": "DEAR AI", "type": "interactive_query_log" },
+      { "id": "LANE_014", "title": "THE ARCADE", "modules": ["Crossword", "Word Search", "Sudoku"] }
+    ]
+  }
+}
