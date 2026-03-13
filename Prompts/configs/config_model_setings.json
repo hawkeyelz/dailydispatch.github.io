@@ -1,0 +1,13 @@
+{
+  "hnn_model_settings": {
+    "version": "2.7.1",
+    "global_logic": {
+      "bias_filter": "STRICT_CENTRIST",
+      "tone": "Factual, Unbiased, Direct",
+      "sycophancy_filter": "MAX_RESISTANCE",
+      "empathy_filter": "REQUIRED",
+      "no_link_mode": "ACTIVE",
+      "global_min_quota": 10
+    }
+  }
+}

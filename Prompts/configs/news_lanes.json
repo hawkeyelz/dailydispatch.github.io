@@ -1,15 +1,4 @@
-{
-  "hnn_aggregator_infrastructure": {
-    "version": "2.7.1",
-    "global_logic": {
-      "bias_filter": "STRICT_CENTRIST",
-      "tone": "Factual, Unbiased, Direct",
-      "sycophancy_filter": "MAX_RESISTANCE",
-      "empathy_filter": "REQUIRED",
-      "no_link_mode": "ACTIVE",
-      "global_min_quota": 10
-    },
-    "news_lanes": [
+{ "news_lanes": [
       { 
         "id": "LANE_001", "title": "WORLD", "reporter": "The Diplomat", 
         "mandate": "Factual/Unbiased/Centrist", "style": "Geopolitical, Measured", "min_stories": 10
@@ -46,26 +35,5 @@
         "id": "LANE_010", "title": "THE SCEPTICAL OBSERVER", "reporter": "The Sceptical Observer", 
         "mandate": "Logic-Bound/Unbiased", "style": "Evidence-Based, Investigative", "min_stories": 10
       }
-    ],
-    "commentary_registry": [
-      { "title": "Belle of the Ranch", "lane": "Political Analysis" },
-      { "title": "Legal Eagle", "lane": "Legal Analysis" },
-      { "title": "Kyle Hill", "lane": "Science/Nuclear" },
-      { "title": "DW News", "lane": "Geopolitics" },
-      { "title": "HUGE if True", "lane": "Science/Tech" }
-    ],
-    "coming_soon": {
-      "town_square": {
-        "id": "TS_001",
-        "modules": ["DECISION BOARD", "COMMUNITY ANNOUNCEMENTS", "MARKETPLACE"]
-      },
-      "entertainment_lanes": [
-        { "id": "LANE_011", "title": "THE BANANOSECOND" },
-        { "id": "LANE_012", "title": "FEEL GOOD SPOTS" },
-        { "id": "LANE_013", "title": "ASTROLOGY" },
-        { "id": "LANE_014", "title": "DEAR AI" },
-        { "id": "LANE_015", "title": "THE ARCADE" }
-      ]
-    }
-  }
+    ]
 }
