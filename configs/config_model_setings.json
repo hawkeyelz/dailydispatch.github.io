@@ -1,5 +1,5 @@
 {
-  "hnn_model_settings": {
+  "model_settings": {
     "version": "2.7.1",
     "global_logic": {
       "bias_filter": "STRICT_CENTRIST",

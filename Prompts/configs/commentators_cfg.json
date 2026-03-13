@@ -1,9 +1,0 @@
- {
-    "commentary_registry": [
-      { "title": "Belle of the Ranch", "lane": "Political Analysis", "youtube":"https://youtube.com/@belleranch?si=w-c3YNgju6CKZuFy"},
-      { "title": "Legal Eagle", "lane": "Legal Analysis", "youtube":"https://youtube.com/@legaleagle?si=ALPjhbWABcF_dsOf"},
-      { "title": "Kyle Hill", "lane": "Science/Nuclear", "youtube":"https://youtube.com/@kylehill?si=DDvolsRcKBTyUnTU"},
-      { "title": "DW News", "lane": "Geopolitics" },
-      { "title": "HUGE if True", "lane": "Science/Tech", "youtube": "https://youtube.com/playlist?list=PLF-HhhjMki5n3PF6xpvR7-wH_-P-FpLqk&si=RaGpchWxdwUeQoCx"}
-    ]
-}
