@@ -1,0 +1,157 @@
+{
+  "common_sense_commentators": {
+    "Political Analysis": [
+      {
+        "title": "Belle of the Ranch",
+        "lane": "Political Analysis",
+        "youtube": "https://youtube.com/@belleranch?si=w-c3YNgju6CKZuFy"
+      },
+      {
+        "title": "Mr Global",
+        "lane": "World/International Politics",
+        "youtube": "https://youtube.com/@mrglobal?si=EXAMPLE"
+      },
+      {
+        "title": "RealClearPolitics",
+        "lane": "Political Analysis & Aggregation",
+        "youtube": "https://www.youtube.com/@RealClearPolitics"
+      }
+    ],
+    "Finance": [
+      {
+        "title": "House of El",
+        "lane": "Finance",
+        "youtube": "https://youtube.com/@houseofel-ai?si=nZHtc5MtrqwZ0Fil"
+      },
+      {
+        "title": "CNBC Make It",
+        "lane": "Finance & Markets",
+        "youtube": "https://www.youtube.com/@CNBCMakeIt"
+      },
+      {
+        "title": "Bloomberg Markets & Finance",
+        "lane": "Finance & Economy",
+        "youtube": "https://www.youtube.com/@Bloomberg"
+      }
+    ],
+    "Legal Analysis": [
+      {
+        "title": "Legal Eagle",
+        "lane": "Legal Analysis",
+        "youtube": "https://youtube.com/@legaleagle?si=ALPjhbWABcF_dsOf"
+      },
+      {
+        "title": "Law by Mike",
+        "lane": "Legal Education",
+        "youtube": "https://www.youtube.com/@LawbyMike"
+      },
+      {
+        "title": "YaleCourses – Law",
+        "lane": "Academic Legal Insight",
+        "youtube": "https://www.youtube.com/@YaleCourses"
+      }
+    ],
+    "Science / Nuclear / Tech": [
+      {
+        "title": "Kyle Hill",
+        "lane": "Science/Nuclear",
+        "youtube": "https://youtube.com/@kylehill?si=DDvolsRcKBTyUnTU"
+      },
+      {
+        "title": "HUGE if True",
+        "lane": "Science/Tech",
+        "youtube": "https://www.youtube.com/playlist?list=PLF-HhhjMki5n3PF6xpvR7-wH_-P-FpLqk&si=RaGpchWxdwUeQoCx"
+      },
+      {
+        "title": "Veritasium",
+        "lane": "Physics/Science",
+        "youtube": "https://www.youtube.com/@veritasium"
+      }
+    ],
+    "Medical / Health": [
+      {
+        "title": "Cleveland Clinic",
+        "lane": "Medical/Public Health",
+        "youtube": "https://www.youtube.com/c/ClevelandClinic"
+      },
+      {
+        "title": "JAMA Network",
+        "lane": "Medical Research & Clinical Breakthroughs",
+        "youtube": "https://www.youtube.com/@JAMANetwork/videos"
+      },
+      {
+        "title": "Psych Hub",
+        "lane": "Mental Health Education",
+        "youtube": "https://www.youtube.com/@PsychHub"
+      }
+    ],
+    "Mental Health / Psychology": [
+      {
+        "title": "Psych Hub",
+        "lane": "Mental Health Education",
+        "youtube": "https://www.youtube.com/@PsychHub"
+      },
+      {
+        "title": "Dr John Campbell",
+        "lane": "Medical / Nursing Insights",
+        "youtube": "https://www.youtube.com/@drjohncampbell"
+      },
+      {
+        "title": "Mayo Clinic",
+        "lane": "Clinical Psychology & Public Education",
+        "youtube": "https://www.youtube.com/@MayoClinic"
+      }
+    ],
+    "Consumer Electronics / Product Reviews": [
+      {
+        "title": "Marques Brownlee (MKBHD)",
+        "lane": "Consumer Electronics",
+        "youtube": "https://www.youtube.com/@MKBHD"
+      },
+      {
+        "title": "Dave Lee / Dave2D",
+        "lane": "Laptops & Gadgets",
+        "youtube": "https://www.youtube.com/@Dave2D"
+      },
+      {
+        "title": "iJustine",
+        "lane": "Tech & Lifestyle",
+        "youtube": "https://www.youtube.com/@iJustine"
+      }
+    ],
+    "Automotive / Cars": [
+      {
+        "title": "Doug DeMuro",
+        "lane": "Car Reviews & Insights",
+        "youtube": "https://www.youtube.com/@DougDeMuro"
+      },
+      {
+        "title": "Engineering Explained",
+        "lane": "Technical Automotive Analysis",
+        "youtube": "https://www.youtube.com/@EngineeringExplained"
+      },
+      {
+        "title": "AutoTopNL",
+        "lane": "Performance & Road Tests",
+        "youtube": "https://www.youtube.com/@AutoTopNL"
+      }
+    ],
+    "Tech / DIY / Other": [
+      {
+        "title": "JerryRigEverything",
+        "lane": "Gadget Durability / Teardowns",
+        "youtube": "https://www.youtube.com/@JerryRigEverything"
+      },
+      {
+        "title": "Tested / Adam Savage",
+        "lane": "DIY, Tech, & Maker Projects",
+        "youtube": "https://www.youtube.com/@tested"
+      },
+      {
+        "title": "Osmosis",
+        "lane": "Medical Education / Tech Insights",
+        "youtube": "https://www.youtube.com/@OsmosisOrg"
+      }
+    ]
+  }
+}
